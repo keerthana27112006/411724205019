@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Website</title>
+
+<style>
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #FFF0F5;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+}
+
+nav a {
+    color: rgb(229, 93, 122);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 20px; /* Change to 20px if roll number is odd */
+}
+
+
+video {
+    display: block;
+    width: 50vw;
+    margin: auto;
+    padding: 10px;
+    background-color: purple; /* Change based on roll number */
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #da1a6d;
+}
+
+
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid div {
+    background: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+
+
+<h1> Welcome To Scoopise 🍦 </h1>
+
+
+
+<img src="photo.jpg.jpeg" alt="Photo">
+
+
+<video width="500" controls autoplay muted>
+    <source src="video.mp4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+<table>
+    <tr>
+        <th>No.</th>
+        <th>Flavours</th>
+        <th>price</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Chocolate🤎🍦</td>
+        <td>170</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>strawberry❤️🍧</td>
+        <td>150</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Butterscotch💛🍨</td>
+        <td>140</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Black current💜🍨</td>
+        <td>270</td>
+    </tr>
+</table>
+
+
+<button>order now</button>
+
+
+
+<div class="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</div>
+
+</body>
+</html>
